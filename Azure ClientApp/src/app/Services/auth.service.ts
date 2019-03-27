@@ -20,7 +20,7 @@ export class AuthService {
 
       client_id: Constants.clientId,
 
-      redirect_uri: 'http://localhost:33117/signin-oidc',
+      redirect_uri: 'http://localhost:4200/Home',
 
       scope: 'openid sensorsapi profile',
 
@@ -35,7 +35,7 @@ export class AuthService {
       silent_redirect_uri: `${Constants.clientRoot}assets/silent-redirect.html`,
 
       //more configuration
-      issuer: "http://localhost:33124",
+      issuer: "http://localhost:33123",
       authorization_endpoint: "http://localhost:33124/connect/authorize",
       userinfo_endpoint: "http://localhost:33124/connect/userinfo",
       end_session_endpoint: "http://localhost:33124/connect/endsession",
