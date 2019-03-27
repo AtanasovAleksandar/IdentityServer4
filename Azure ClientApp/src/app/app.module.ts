@@ -7,18 +7,22 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent } from './about/about.component';
 import { AuthService } from './Services/auth.service';
 import { UnauthorizedComponent } from './unauthorized.component';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     AboutComponent,
-    UnauthorizedComponent
+    UnauthorizedComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     AuthService

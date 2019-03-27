@@ -53,6 +53,7 @@ export class AuthService {
     this._userManager.events.addUserLoaded(args => {
       this._userManager.getUser().then(user => {
         this._user = user;
+        console.log(user)
         // this.loadSecurityContext();
       });
     });
